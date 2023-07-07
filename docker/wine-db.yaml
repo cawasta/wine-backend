@@ -7,8 +7,9 @@ services:
   image: mysql:8.0.33
   environment:
     MYSQL_DATABASE: wine-db
-    MYSQL_ROOT_PASSWORD: root
+    MYSQL_ROOT_PASSWORD: wine
   ports:
     - "3306:3306"
   volumes:
-    - "/home/alex/Documents/databases/wine-db:/var/lib/mysql:rw"
+    #- "/home/alex/Documents/databases/wine-db:/var/lib/mysql:rw"
+    - "C:/Users/ddr_r/databases/wine-db:/var/lib/mysql:rw"
